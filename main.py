@@ -1,11 +1,15 @@
-# Ask user to input the length of the 3 sides of a triangle
-x = float(input("enter the length of the first side"))
-y = float(input("enter the length of the second side"))
-z = float(input("enter the the length of third side"))
-# if all the sides are equal print equilateral
-if x == y== z:
-    print("the triangle is an equilateral triangle")
-elif x==y or y==z or x==z:
-    print("the triangle is isosceles")
-else:
-    print("the triangle is a scalene triangle")
+import add
+import show
+import update
+import delete
+
+add_task_response= add.add_task("sleep")
+print(add_task_response)
+
+show_task_response= show.show_task()
+print(show_task_response)
+
+update_task_response= update.update_task("sleep", "wake up")
+print(update_task_response)
+delete_task_response = delete.delete_task("wake up")
+print(delete_task_response)
